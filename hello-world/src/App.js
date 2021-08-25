@@ -128,11 +128,7 @@ function App() {
           <option value="3">Term Membership</option>
         </select>
         <br />
-        <br />
-        <Button>Register</Button>
-      </form>
-    </div>
-  );
+        
 }
 
 export default App;
