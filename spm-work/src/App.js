@@ -1,132 +1,147 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Button, card, Form, Container } from "bootstrap";
-import Row from "react-bootstrap";
 
 function App() {
   return (
     <div className="App">
-      <div class="form-group"></div>
-      <div class="form-group row"></div>
-      <div class="custom-control custom-checkbox"></div>
-      <div class="form-group"></div>
+      <center>
+        <h1>Stay Fit Gym </h1>
 
-      <h1>Stay Fit Gym </h1>
-
-      <h3>
-        <small class="text-muted">Member Registration</small>
-      </h3>
-
+        <h3>
+          <small class="text-muted">Member Registration</small>
+        </h3>
+      </center>
       <form>
-        <label>Title </label>
-        <select class="custom-select custom-select-sm">
-          <option selected>Mr</option>
-          <option value="1">Ms</option>
-          <option value="2">Mrs</option>
-        </select>
+        <div className="form-group">
+          <label>Title</label>
+
+          <select class="custom-select custom-select">
+            <option selected>Mr</option>
+            <option value="1">Ms</option>
+            <option value="2">Mrs</option>
+          </select>
+          <br />
+          <br />
+        </div>
+        <div className="form-group">
+          <label>Name</label>
+          <input
+            type="text"
+            className="form-control-m"
+            placeholder="Enter Name"
+          />
+        </div>
         <br />
         <br />
-        <label for="Name">Name</label>
+
+        <div className="form-group">
+          <label>Telephone Number</label>
+          <input
+            type="text"
+            className="form-control-m"
+            placeholder="Telephone"
+          />
+        </div>
+        <br />
+        <br />
+        <div className="form-group">
+          <label>Email</label>
+          <input
+            type="email"
+            className="form-control-m"
+            placeholder="Enter email"
+          />
+          <br />
+          <br />
+        </div>
+        <div className="form-group">
+          <label>Purpose to coming gym</label>
+          <br />
+          <br />
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customCheck1"
+          ></input>
+
+          <label class="custom-control-label" for="customCheck1">
+            To reduce weight
+          </label>
+          <br />
+          <br />
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customCheck2"
+          ></input>
+          <label class="custom-control-label" for="customCheck2">
+            To gain weight
+          </label>
+          <br />
+          <br />
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customCheck3"
+          ></input>
+          <label class="custom-control-label" for="customCheck3">
+            To build muscles
+          </label>
+          <br />
+          <br />
+          <label for="custom-control-label">other</label>
+          <br />
+          <br />
+          <textarea
+            class="form-control-sm"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+          <br />
+
+          <br />
+        </div>
+        <label for="custom-control-label">
+          Member suffering from any chronic disease or any non-communicable
+          disease
+        </label>
         <input
-          type="text"
-          class="form-control-sm"
-          id="formGroupExampleInput"
-          placeholder="Name"
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio1"
+          autocomplete="off"
+          checked
         ></input>
-        <br />
-        <br />
-        <label for="formGroupExampleInput2">Address</label>
+        <label class="btn btn-outline-primary" for="btnradio1">
+          Yes
+        </label>
+
         <input
-          type="text"
-          class="form-control-sm"
-          id="formGroupExampleInput2"
-          placeholder="Address"
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio2"
+          autocomplete="off"
         ></input>
-        <br />
-        <br />
-        <label for="exampleFormControlInput1">Email address</label>
-        <input
-          type="email"
-          class="form-control-sm"
-          id="exampleFormControlInput1"
-          placeholder="name@example.com"
-        ></input>
-        <br />
-        <br />
-        <label>Purpose to coming to the gym </label>
-        <br />
-        <br />
-        <input
-          type="checkbox"
-          class="custom-control-input"
-          id="customCheck1"
-        ></input>
-        <label class="custom-control-label" for="customCheck1">
-          To reduce weight
+        <label class="btn btn-outline-primary" for="btnradio2">
+          No
         </label>
         <br />
         <br />
-        <input
-          type="checkbox"
-          class="custom-control-input"
-          id="customCheck2"
-        ></input>
-        <label class="custom-control-label" for="customCheck2">
-          To gain weight
-        </label>
-        <br />
-        <br />
-        <input
-          type="checkbox"
-          class="custom-control-input"
-          id="customCheck3"
-        ></input>
-        <label class="custom-control-label" for="customCheck3">
-          To build muscles
-        </label>
-        <br />
-        <br />
-        <label for="exampleFormControlTextarea1">other</label>
-        <textarea
-          class="form-control-sm"
-          id="exampleFormControlTextarea1"
-          rows="3"
-        ></textarea>
-        <br />
-        <br />
-        <label for="exampleFormControlTextarea1">Enter Height</label>
-        <input
-          type="text"
-          class="form-control-sm"
-          id="formGroupExampleInput"
-          placeholder="Height"
-        ></input>
-        <label for="exampleFormControlTextarea1">Enter weight</label>
-        <input
-          type="text"
-          class="form-control-sm"
-          id="formGroupExampleInput"
-          placeholder="weight"
-        ></input>
-        <label for="exampleFormControlTextarea1">BMI</label>
-        <input
-          type="text"
-          class="form-control-sm"
-          id="formGroupExampleInput"
-          placeholder="BMI"
-        ></input>
-        <br />
-        <br />
-        <label>Membership Type</label>
-        <select class="custom-select custom-select-sm">
-          <option selected>Pay As You Go</option>
-          <option value="1">Class Package</option>
-          <option value="2">Open Membership</option>
-          <option value="3">Term Membership</option>
-        </select>
-        <br />
-        <br />
-        <button type="button" class="btn btn-primary btn-lg">
+
+        <div class="mb-3">
+          <label for="formFileMultiple" class="form-label">
+            If yes, upload medical repots.
+          </label>
+          <input
+            class="form-control"
+            type="file"
+            id="formFileMultiple"
+            multiple
+          ></input>
+        </div>
+        <button type="submit" className="btn btn-primary btn-lg">
           Register
         </button>
       </form>
