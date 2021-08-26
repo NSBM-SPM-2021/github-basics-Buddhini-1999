@@ -1,6 +1,7 @@
-import "./App.css";
-import Button from "react-bootstrap/Button";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Button, card, Form, Container } from "bootstrap";
+import Row from "react-bootstrap";
 
 function App() {
   return (
@@ -9,11 +10,13 @@ function App() {
       <div class="form-group row"></div>
       <div class="custom-control custom-checkbox"></div>
       <div class="form-group"></div>
+
       <h1>Stay Fit Gym </h1>
 
       <h3>
         <small class="text-muted">Member Registration</small>
       </h3>
+
       <form>
         <label>Title </label>
         <select class="custom-select custom-select-sm">
@@ -123,7 +126,9 @@ function App() {
         </select>
         <br />
         <br />
-        <Button>Register</Button>
+        <button type="button" class="btn btn-primary btn-lg">
+          Register
+        </button>
       </form>
     </div>
   );
