@@ -141,6 +141,51 @@ function App() {
             multiple
           ></input>
         </div>
+        <div className="form-group">
+          <label>Age</label>
+          <input
+            type="text"
+            className="form-control-m"
+            placeholder="Enter Age"
+          />
+          <br />
+          <br />
+        </div>
+        <div className="form-group">
+          <label>Enter Weight</label>
+          <input
+            type="text"
+            className="form-control-m"
+            placeholder="Enter weight/Kg"
+          />
+          <br />
+          <br />
+          <div className="form-group">
+            <label>Enter Height</label>
+            <input
+              type="text"
+              className="form-control-m"
+              placeholder="Enter height/cm"
+            />
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="mb-3">
+          <label for="formFileMultiple" class="form-label">
+            Membership Type
+          </label>
+
+          <select class="custom-select custom-select-sm">
+            <option selected>Pay As You Go</option>
+            <option value="1">Class Package</option>
+            <option value="2">Open Membership</option>
+            <option value="3">Term Membership</option>
+          </select>
+          <br />
+          <br />
+        </div>
+
         <button type="submit" className="btn btn-primary btn-lg">
           Register
         </button>
