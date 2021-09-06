@@ -216,6 +216,13 @@ function App() {
               </button>
             </div>
           </center>
+          <center>
+            <div class="col-12">
+              <button class="btn btn-primary" type="reset" value="Reset">
+                Clear
+              </button>
+            </div>
+          </center>
         </div>
       </form>
     </div>
